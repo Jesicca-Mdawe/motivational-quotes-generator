@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
     <title>AI Quotes Generator</title>
   </head>
@@ -19,7 +20,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="motivational-quotes-form">
           <input
             type="text"
             placeholder="Enter a word for the quote background..."
@@ -30,7 +31,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="quotes">i.e Success, Hopes and Dreams</div>
+        <div class="quotes" id="quotes"></div>
       </main>
 
       <footer>
