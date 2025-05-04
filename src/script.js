@@ -22,7 +22,7 @@ function quotesGenerate(event) {
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);
 
-  axios.get(apiKey).then(displayQuote);
+  axios.get(apiURL).then(displayQuote);
 }
 
 let quotesFormElement = document.querySelector("#motivational-quotes-form");
