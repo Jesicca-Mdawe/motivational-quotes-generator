@@ -1,12 +1,28 @@
-function quotesGenerate(event) {
-  event.preventDefault();
-
+function displayQuote(response) {
+  console.log("Quote generated");
   new Typewriter("#quotes", {
-    strings: "i.e Success, Hopes and Dreams",
+    strings: response.data.answer,
     autoStart: true,
     delay: 1,
     cursor: "",
   });
+}
+
+function quotesGenerate(event) {
+  event.preventDefault();
+
+  let userInstruction = document.querySelector("#user-instruction");
+  let apiKey = "ob34054454b30351baa30f0fdftfa28b";
+  let prompt = `User instruction: Generate a motivational quote on ${userInstruction.value}`;
+  let context =
+    "You are a motivational companion and prefer giving short qoutes.Make sure to follow the user instruction when generating a quick qoute.";
+  let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  console.log("Generating quote...");
+  console.log(`Prompt: ${prompt}`);
+  console.log(`Context: ${context}`);
+
+  axios.get(apiKey).then(displayQuote);
 }
 
 let quotesFormElement = document.querySelector("#motivational-quotes-form");
