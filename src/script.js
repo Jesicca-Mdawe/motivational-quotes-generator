@@ -13,7 +13,7 @@ function quotesGenerate(event) {
 
   let userInstruction = document.querySelector("#user-instruction");
   let apiKey = "ob34054454b30351baa30f0fdftfa28b";
-  let prompt = `User instruction: Generate a motivational quote on ${userInstruction.value}`;
+  let prompt = `User instruction: Generate a four line motivational quote on ${userInstruction.value}`;
   let context =
     "You are a motivational companion and prefer giving short qoutes.Make sure to follow the user instruction when generating a quick qoute.";
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
