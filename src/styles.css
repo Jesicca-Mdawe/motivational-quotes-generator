@@ -1,10 +1,10 @@
 body {
-  background-color: #f9f7fe;
+  background-color: #e1eacd;
   font-family: "IBM Plex Serif", serif;
 }
 
 a {
-  color: #885df1;
+  color: #61b390;
 }
 
 .container {
@@ -55,7 +55,7 @@ form {
 
 .submit-button {
   margin-left: 10px;
-  background: #885df1;
+  background: #61b390;
   color: white;
   border: none;
   width: 150px;
@@ -69,7 +69,7 @@ form {
   background-color: #fff;
   padding: 10px;
   line-height: 2;
-  border-left: 3px solid #885df1;
+  border-left: 3px solid #61b390;
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
 }
 
