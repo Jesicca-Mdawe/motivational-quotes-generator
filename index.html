@@ -21,19 +21,22 @@
       </header>
 
       <main>
-        <form id="motivational-quotes-form">
-          <input
-            type="text"
-            placeholder="Enter a word for the quote background..."
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instruction"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="quotes" id="quotes"></div>
+        <div class="form-container">
+          <form id="motivational-quotes-form">
+            <input
+              type="text"
+              placeholder="Enter a word for the quote background..."
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instruction"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Success, life, money...</div>
+        </div>
+        <div class="quotes hidden" id="quotes"></div>
       </main>
 
       <footer>

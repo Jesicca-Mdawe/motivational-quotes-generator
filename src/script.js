@@ -18,6 +18,10 @@ function quotesGenerate(event) {
     "You are a motivational companion and prefer giving short qoutes.Make sure to follow the user instruction when generating a quick qoute.";
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let qoutesElement = document.querySelector("#quotes");
+  qoutesElement.classList.remove("hidden");
+  qoutesElement.innerHTML = `<div class = "generating"> Generating motivational quote about ${userInstruction.value} </div>`;
+
   console.log("Generating quote...");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);
